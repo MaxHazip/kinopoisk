@@ -114,7 +114,7 @@ submitButton.addEventListener('click', () => {
         if (isValidLogin && passwordValue === users[userIndex].password) {
 
             storage.setCurrentUser(users[userIndex])
-            window.location.href = "../profile.html"
+            window.location.href = "profile.html"
 
         } else {
 

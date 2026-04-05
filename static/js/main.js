@@ -33,7 +33,7 @@ const renderTitle = (movie) => {
     let mainLink = document.createElement("a")
     mainLink.style.cursor = "pointer"
     mainLink.addEventListener('click', () => {
-        window.location.href = `../title.html?id=${movie.id}`
+        window.location.href = `title.html?id=${movie.id}`
     })
 
     let titleImage = document.createElement("div")
@@ -244,7 +244,7 @@ communityLink.textContent = authUser === null ? "" : "Community"
 
 loginButton.addEventListener('click', () => {
 
-    window.location.href = authUser === null ? "../login.html" :  "../profile.html"
+    window.location.href = authUser === null ? "login.html" :  "profile.html"
 
 })
 

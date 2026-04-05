@@ -21,7 +21,7 @@ logoutButton.addEventListener('click', () => {
 
     storage.logout()
 
-    window.location.href = "../index.html"
+    window.location.href = "index.html"
 
 })
 
@@ -57,7 +57,7 @@ const renderMovies = () => {
         let mainLink = document.createElement("a")
         mainLink.style.cursor = "pointer"
         mainLink.addEventListener('click', () => {            
-            window.location.href = `../title.html?id=${movies[i].id}`
+            window.location.href = `title.html?id=${movies[i].id}`
         })
 
         let titleImage = document.createElement("div")
@@ -152,7 +152,7 @@ const renderGraids = () => {
         let mainLink = document.createElement("a")
         mainLink.style.cursor = "pointer"
         mainLink.addEventListener('click', () => {            
-            window.location.href = `../title.html?id=${movies[i].id}`
+            window.location.href = `title.html?id=${movies[i].id}`
         })
 
         let titleImage = document.createElement("div")
