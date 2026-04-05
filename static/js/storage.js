@@ -1,6 +1,6 @@
-import defaultUsers from "../../data/defaultUsers.json" with {type: 'json'}
-import defaultMovies from "../../data/movies.json" with {type: 'json'}
-import defaultReviews from "../../data/reviews.json" with {type: 'json'}
+import defaultUsers from "../data/defaultUsers.json" with {type: 'json'}
+import defaultMovies from "../data/movies.json" with {type: 'json'}
+import defaultReviews from "../data/reviews.json" with {type: 'json'}
 
 export class Storage {
 
