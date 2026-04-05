@@ -1,0 +1,108 @@
+.main-profile-container {
+    padding: 30px 0;
+}
+
+.profile_main_info {
+    display: flex;
+    gap: 30px;
+    background: #ffffff;
+    border: 1px solid #dce5ec;
+    border-radius: 16px;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+.profile_image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #bdc4cc;
+    background-size: cover;
+}
+
+.profile_name {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1e2f3e;
+    margin-bottom: 8px;
+}
+
+.friends_films_count {
+    display: flex;
+    gap: 24px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.friends_films {
+    display: flex;
+    gap: 24px;
+    color: #5a6f7e;
+}
+
+.profile_categories {
+    display: flex;
+    gap: 24px;
+    border-bottom: 2px solid #e2e8f0;
+    margin-bottom: 24px;
+    padding-bottom: 10px;
+}
+
+.profile_categories a {
+    cursor: pointer;
+    font-weight: 500;
+    color: #5a6f7e;
+    padding: 4px 0;
+}
+
+.profile_categories a:hover {
+    color: #f39c12;
+}
+
+.titleName {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #1e2f3e;
+}
+
+.user {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.userAvatar {
+
+    margin-bottom: 10px;
+    width: 100px;
+    aspect-ratio: 1/1;
+    background-color: #1e2f3e;
+    border-radius: 100%;
+    background-size: cover;
+
+}
+
+.userName {
+
+    margin-bottom: 10px;
+
+}
+
+.deletefriend {
+
+    padding: 10px;
+    background-color: #5a6f7e;
+    color: white;
+    border-radius: 20px;
+
+}
+
+.raiting {
+
+    padding: 10px;
+
+}

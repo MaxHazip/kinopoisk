@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/css/null.css">
+    <link rel="stylesheet" href="static/css/allPages.css">
+    <link rel="stylesheet" href="static/css/title.css">
+</head>
+<body>
+    <div class="content">
+        <header>
+            <div class="container header-container">
+                <a href="index.html"><div class="logo"></div></a>
+                <input type="search" class="header-searchbox" placeholder="Search...">
+                <nav class="header-nav">
+                    <ul class="header-nav_list">
+                        <li class="header-nav_list_item">
+                            <select name="navigation_items" class="navigation_items">
+                                <option value="Movies">Movies</option>
+                                <option value="TvShows">Tv Shows</option>
+                                <option value="AwardsAndEvents">Awards & Events</option>
+                                <option value="Watch">Watch</option>
+                                <option value="Celebs">Celebs</option>
+                            </select>
+                        </li>
+
+                        <li class="header-nav_list_item"><a href="./friends.html" id="community">Community</a></li>
+                        
+                        <li class="header-nav_list_item"><a href="#">Wishlist</a></li>
+                        <li class="header-nav_list_item"><a id="login">Sign in</a></li>
+                    </ul>
+                    
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="container title_container">
+                <div class="title_right">
+                    <div class="title_favorite">
+                        <h1 class="title_title"></h1>
+                        <div id="favorite_button"></div>
+                    </div>                    
+                    <div class="mini_information">
+                        <p class="title_year"></p>
+                        <p class="title_age_limit"></p>
+                        <p class="title_duration"></p>
+                    </div>
+                    <div class="title_poster"></div>
+                </div>    
+                <div class="title_left">
+                    <h2>О фильме</h2>
+                    <div class="title_info">
+                        <ul class="title_info_keys">
+                            <li class="title_info_keys_item">Страна</li>
+                            <li class="title_info_keys_item">Режиссер</li>
+                            <li class="title_info_keys_item">Сценарий</li>
+                            <li class="title_info_keys_item">Продюсер</li>
+                            <li class="title_info_keys_item">Оператор</li>
+                            <li class="title_info_keys_item">Композитор</li>
+                            <li class="title_info_keys_item">Художник</li>
+                            <li class="title_info_keys_item">Монтаж</li>
+                            <li class="title_info_keys_item">Бюджет</li>
+                            <li class="title_info_keys_item">Сборы в мире</li>
+                            <li class="title_info_keys_item">Жанры</li>
+                        </ul>
+                        <ul class="title_info_data">
+                            <li class="title_info_data_item country"></li>
+                            <li class="title_info_data_item director"></li>
+                            <li class="title_info_data_item writers"></li>
+                            <li class="title_info_data_item producer"></li>
+                            <li class="title_info_data_item operator"></li>
+                            <li class="title_info_data_item composer"></li>
+                            <li class="title_info_data_item artist"></li>
+                            <li class="title_info_data_item editor"></li>
+                            <li class="title_info_data_item budget"></li>
+                            <li class="title_info_data_item boxOffice"></li>
+                            <li class="title_info_data_item genres"></li>
+                        </ul>
+                    </div>
+                    <div class="avg_raiting_container">
+                        <img src="./static/img/Star.svg" alt="" class="rating_star">
+                        <p id="rating"></p>
+                    </div>   
+                    <div class="submitraiting">                        
+                    </div>          
+                    <p class="review_title">Оставить отзыв</p>
+                    <div class="review_submit">
+                        <input type="text" placeholder="Зоголовок отзыва" id="review_title">
+                        <textarea type="text" placeholder="Текст отзыва" id="review_text"></textarea>
+                        <button id="submit_review">Отправить</button>
+                    </div>
+                    <div id="reviews"></div>
+                    <div class="error_alert"></div>       
+                </div>            
+            </div>
+        </main>
+    </div>
+    <footer>
+        <div class="container footer_container">
+            <ul class="extra_information_list">
+                <li class="extra_information_list_item">
+                    <a href="">Vacancies</a>
+                </li>
+                <li class="extra_information_list_item">
+                    <a href="">Advertising</a>
+                </li>
+                <li class="extra_information_list_item">
+                    <a href="">Agreement</a>
+                </li>
+                <li class="extra_information_list_item">
+                    <a href="">Recommendation rules</a>
+                </li>
+                <li class="extra_information_list_item">
+                    <a href="">Reference</a>
+                </li>
+                <li class="extra_information_list_item">
+                    <a href="">All films</a>
+                </li>
+                <li class="extra_information_list_item">
+                    <a href="">All cartoons</a>
+                </li>
+                <li class="extra_information_list_item">
+                    <a href="">Tv-shows</a>
+                </li>
+            </ul>
+            <p class="rights">&copy; Все права защищены</p>
+        </div>
+    </footer>
+    <script type="module" src="./static/js/title.js"></script>
+</body>
+</html>

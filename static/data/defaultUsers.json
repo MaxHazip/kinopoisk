@@ -1,0 +1,184 @@
+[
+    {
+        "id": 1,
+        "userName": "Витя",
+        "email": "vitya@gmail.com",
+        "password": "Df6735cpd",
+        "friends": [3, 6, 9],
+        "avatar": "./assets/avatars/avatar1.png",
+        "favorites": [1, 5, 9],
+        "grades": {
+            "1": 5,
+            "2": 2
+        },
+        "favGenres": ["Криминал", "Комедия", "Драма", "Фантастика", "Боевик", "Триллер"]
+    },
+    {
+        "id": 2,
+        "userName": "Борис",
+        "email": "boris@example.com",
+        "password": "boris456",
+        "friends": [1, 4, 9],
+        "avatar": "./assets/avatars/avatar2.png",
+        "favorites": [5, 8, 14, 19],
+        "grades": {
+            "5": 9,
+            "8": 7,
+            "14": 9,
+            "3": 7
+        },
+        "favGenres": ["Криминал", "Драма", "Боевик", "История", "Мелодрама", "Триллер"]
+    },
+    {
+        "id": 3,
+        "userName": "Виктория",
+        "email": "vika@example.com",
+        "password": "vika789",
+        "friends": [4, 6, 10],
+        "avatar": "./assets/avatars/avatar3.png",
+        "favorites": [2, 9, 11, 17],
+        "grades": {
+            "2": 9,
+            "9": 8,
+            "11": 8,
+            "17": 7,
+            "5": 8
+        },
+        "favGenres": ["Научная-фантастика", "Фантастика", "Боевик", "Триллер", "Фэнтези", "Приключения", "Криминал", "Драма", "Аниме"]
+    },
+    {
+        "id": 4,
+        "userName": "Глеб",
+        "email": "gleb@example.com",
+        "password": "gleb000",
+        "friends": [3, 7, 1],
+        "avatar": "./assets/avatars/avatar4.png",
+        "favorites": [6, 10, 13, 20],
+        "grades": {
+            "6": 9,
+            "10": 7,
+            "13": 10,
+            "20": 8,
+            "1": 5
+        },
+        "favGenres": ["Боевик", "Криминал", "Драма", "Биография", "Триллер", "Фантастика"]
+    },
+    {
+        "id": 5,
+        "userName": "Дарья",
+        "email": "dasha@example.com",
+        "password": "dasha111",
+        "friends": [1, 6, 8],
+        "avatar": "./assets/avatars/avatar5.png",
+        "favorites": [4, 12, 16, 18],
+        "grades": {
+            "4": 9,
+            "12": 6,
+            "16": 8,
+            "18": 8,
+            "7": 9
+        },
+        "favGenres": ["Драма", "Аниме", "Фэнтези", "Приключения", "Боевик", "Криминал", "Триллер"]
+    },
+    {
+        "id": 6,
+        "userName": "Егор",
+        "email": "egor@example.com",
+        "password": "egor222",
+        "friends": [3, 5, 9],
+        "avatar": "./assets/avatars/avatar6.png",
+        "favorites": [1, 7, 14, 19],
+        "grades": {
+            "1": 9,
+            "7": 8,
+            "14": 9,
+            "19": 7,
+            "3": 7
+        },
+        "favGenres": ["Криминал", "Комедия", "Триллер", "Драма", "Боевик", "История"]
+    },
+    {
+        "id": 7,
+        "userName": "Жанна",
+        "email": "zhanna@example.com",
+        "password": "zhanna333",
+        "friends": [2, 4, 10],
+        "avatar": "./assets/avatars/avatar7.png",
+        "favorites": [8, 11, 15, 20],
+        "grades": {
+            "8": 7,
+            "11": 9,
+            "15": 8,
+            "20": 8,
+            "2": 7
+        },
+        "favGenres": ["Фэнтези", "Приключения", "Драма", "Мелодрама", "Триллер", "Фантастика"]
+    },
+    {
+        "id": 8,
+        "userName": "Захар",
+        "email": "zakhar@example.com",
+        "password": "zakhar444",
+        "friends": [1, 5, 9],
+        "avatar": "./assets/avatars/avatar8.png",
+        "favorites": [3, 6, 13, 17],
+        "grades": {
+            "3": 9,
+            "6": 9,
+            "13": 8,
+            "17": 8,
+            "10": 8
+        },
+        "favGenres": ["Драма", "Боевик", "Криминал", "Биография", "Аниме", "Фэнтези", "Приключения", "Фантастика"]
+    },
+    {
+        "id": 9,
+        "userName": "Инна",
+        "email": "inna@example.com",
+        "password": "inna555",
+        "friends": [2, 6, 8],
+        "avatar": "./assets/avatars/avatar9.png",
+        "favorites": [4, 10, 12, 16],
+        "grades": {
+            "4": 9,
+            "10": 7,
+            "12": 8,
+            "16": 9,
+            "19": 8
+        },
+        "favGenres": ["Драма", "Криминал", "Аниме", "Фэнтези", "Приключения", "Триллер", "Фантастика", "Боевик"]
+    },
+    {
+        "id": 10,
+        "userName": "Кирилл",
+        "email": "kirill@example.com",
+        "password": "kirill666",
+        "friends": [3, 7, 4],
+        "avatar": "./assets/avatars/avatar10.png",
+        "favorites": [5, 9, 14, 18],
+        "grades": {
+            "5": 9,
+            "9": 8,
+            "14": 8,
+            "18": 9,
+            "20": 7
+        },
+        "favGenres": ["Криминал", "Драма", "Фантастика", "Боевик", "Триллер", "История"]
+    },
+    {
+        "id": 11,
+        "userName": "admin",
+        "email": "admin",
+        "password": "admin",
+        "friends": [1, 3, 5],
+        "avatar": "./static/img/me.jpg",
+        "favorites": [1, 2, 3],
+        "grades": {
+            "1": 10,
+            "2": 10,
+            "3": 10,
+            "4": 8
+        },
+        "favGenres": ["Криминал", "Комедия", "Научная-фантастика", "Драма"]
+    }
+]

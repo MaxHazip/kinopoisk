@@ -1,0 +1,153 @@
+.title_container {
+    display: flex;
+    gap: 40px;
+    padding: 30px 0;
+}
+
+.title_right {
+    width: 300px;
+}
+
+.title_left {
+    flex: 1;
+}
+
+.title_title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #1e2f3e;
+}
+
+.mini_information {
+    display: flex;
+    gap: 16px;
+    margin: 12px 0;
+    color: #5a6f7e;
+}
+
+.title_poster {
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    background-color: #bdc4cc;
+    border-radius: 16px;
+    margin: 15px 0;
+}
+
+.title_favorite {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+#favorite_button {
+    width: 32px;
+    height: 32px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+#favorite_button:hover {
+    transform: scale(1.05);
+}
+
+.title_info {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px 24px;
+    background: #ffffff;
+    border: 1px solid #dce5ec;
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 24px;
+}
+
+.title_info_keys_item,
+.title_info_data_item {
+    padding: 6px 0;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+.title_info_keys_item {
+    font-weight: bold;
+    color: #2c4050;
+}
+
+.avg_raiting_container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.rating_star {
+    width: 32px;
+    height: 32px;
+}
+
+#rating {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #f39c12;
+}
+
+.submitraiting {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 24px;
+}
+
+.star {
+    width: 32px;
+    height: 32px;
+    background-size: contain;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+.star:hover {
+    transform: scale(1.1);
+}
+
+.review_submit {
+    background: #ffffff;
+    border: 1px solid #dce5ec;
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 24px;
+}
+
+#review_title,
+#review_text {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 10px;
+    border: 1px solid #cbd8e4;
+    border-radius: 8px;
+    font-family: inherit;
+}
+
+#submit_review {
+    background: #f39c12;
+    color: #1e2f3e;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#submit_review:hover {
+    background: #e67e22;
+    color: white;
+}
+
+#reviews {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}

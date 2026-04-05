@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eef2f5;
+    color: #1a2a3a;
+}
+
+.content {
+    min-height: 100vh;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ----- Header (общий) ----- */
+header {
+    background-color: #1e2f3e;
+    border-bottom: 1px solid #2c4050;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    background-color: #f39c12;
+    border-radius: 8px;
+}
+
+.header-searchbox {
+    width: 300px;
+    padding: 8px 12px;
+    border: 1px solid #3a5266;
+    background-color: #ffffff;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.header-nav_list {
+    display: flex;
+    list-style: none;
+}
+
+.header-nav_list_item {
+    margin-left: 20px;
+}
+
+.header-nav_list_item a,
+.header-nav_list_item select {
+    color: #e0e6ed;
+    text-decoration: none;
+    background: none;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.header-nav_list_item a:hover,
+.header-nav_list_item select:hover {
+    color: #f39c12;
+}
+
+/* ----- Карточки фильмов (общие для главной и профиля) ----- */
+.titles_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 24px;
+}
+
+.title {
+    width: 200px;
+    background: #ffffff;
+    border: 1px solid #dce5ec;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+}
+
+.title:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.title_image {
+    width: 100%;
+    height: 300px;
+    background-color: #bdc4cc;
+    background-size: cover;
+    background-position: center;
+}
+
+.title_name {
+    font-weight: bold;
+    margin: 12px 10px 4px;
+    font-size: 1rem;
+    color: #1e2f3e;
+}
+
+.year,
+.tags {
+    margin: 0 10px 8px;
+    font-size: 0.8rem;
+    color: #5a6f7e;
+}
+
+.tags {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* ----- Блок рецензий (общий для страницы фильма и профиля) ----- */
+.reviewContainer {
+    background: #ffffff;
+    border: 1px solid #dce5ec;
+    border-radius: 16px;
+    padding: 18px;
+    margin-bottom: 16px;
+}
+
+.reviewAuthor {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #f39c12;
+}
+
+.reviewTitle {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.reviewText {
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+/* ----- Оценки (звёзды) ----- */
+.raiting {
+    display: flex;
+    gap: 4px;
+    margin-top: 8px;
+}
+
+.raitingStar {
+    width: 18px;
+    height: 18px;
+    background-image: url("../img/Star.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.error_alert {
+    color: #e74c3c;
+    margin-top: 12px;
+}
+
+/* ----- Кнопки рекомендаций (общие для главной) ----- */
+#recomendationsButton,
+#friendsRecomendationsButton {
+    background: none;
+    border: 1px solid #f39c12;
+    color: #f39c12;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    min-width: 160px;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+#recomendationsButton:hover,
+#friendsRecomendationsButton:hover {
+    background-color: #f39c12;
+    color: #1e2f3e;
+}
+
+/* ----- Footer (общий) ----- */
+footer {
+    background: #1e2f3e;
+    border-top: 1px solid #2c4050;
+    margin-top: 50px;
+    padding: 30px 0 20px;
+    text-align: center;
+}
+
+.extra_information_list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.extra_information_list_item a {
+    color: #bdc4cc;
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+
+.extra_information_list_item a:hover {
+    color: #f39c12;
+}
+
+.rights {
+    font-size: 0.75rem;
+    color: #7e95ab;
+}

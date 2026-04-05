@@ -1,0 +1,64 @@
+.usersContainer {
+    padding: 30px 0;
+}
+
+.users {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.user {
+    width: 180px;
+    background: #ffffff;
+    border: 1px solid #dce5ec;
+    border-radius: 16px;
+    text-align: center;
+    padding: 18px 12px;
+    transition: box-shadow 0.2s;
+}
+
+.user:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.userAvatar {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 12px;
+    border-radius: 50%;
+    background-color: #bdc4cc;
+    background-size: cover;
+}
+
+.userName {
+    font-weight: bold;
+    margin-bottom: 12px;
+    font-size: 1rem;
+}
+
+.addfriend,
+.deletefriend {
+    background: #f39c12;
+    color: #1e2f3e;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.addfriend:hover {
+    background: #e67e22;
+    color: white;
+}
+
+.deletefriend {
+    background: #e74c3c;
+    color: white;
+}
+
+.deletefriend:hover {
+    background: #c0392b;
+}
