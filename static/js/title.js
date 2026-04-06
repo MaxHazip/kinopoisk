@@ -233,6 +233,12 @@ const renderReviews = () => {
         reviewContainer.appendChild(reviewTitle)
         reviewContainer.appendChild(reviewText)
 
+let deleteButton = document.createElement("button")
+        deleteButton.className = "deleteButton"
+        deleteButton.textContent = "Удалить"
+
+        reviewContainer.appendChild(deleteButton)
+
         reviewsContainer.appendChild(reviewContainer)
     }
 
