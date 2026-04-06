@@ -11,6 +11,7 @@ const sortSelect = document.getElementById("sort_select")
 
 let query = ""
 let valueOfFilter = "all"
+let valueOfYears = "all"
 let methodOf = "casual"
 
 const titles = storage.getMovies()
@@ -24,6 +25,10 @@ const renderTitle = (movie) => {
     }
 
     if (query !== "" && !movieLowCase.includes(query)) {
+        return
+    }
+
+    if (valueOfYears !== "all" && !(movie.year == valueOfYears)) {
         return
     }
 
@@ -192,6 +197,44 @@ const renderFilter = () => {
 filter.onchange = () => {
 
     valueOfFilter = filter.value
+
+    renderTitles(methodOf)
+
+}
+
+let yearsArr = []
+const yearsSelect = document.getElementById("years_select")
+
+const renderYears = () => {
+
+    for (let i = 0; i < titles.length; i++) {
+
+        if (!yearsArr.includes(Number(titles[i].year))) {
+
+            yearsArr.push(Number(titles[i].year))   
+
+        }        
+
+    }
+
+    yearsArr.sort((a, b) => a - b)
+
+    for (let i = 0; i < yearsArr.length; i++) {
+
+        let option = document.createElement("option")
+        option.value = yearsArr[i]
+        option.textContent = yearsArr[i]
+        yearsSelect.appendChild(option)
+
+    }
+
+}
+
+renderYears()
+
+yearsSelect.onchange = () => {
+
+    valueOfYears = String(yearsSelect.value)
 
     renderTitles(methodOf)
 

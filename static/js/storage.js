@@ -99,7 +99,7 @@ export class Storage {
     deleteReview = (reviewId) => {
 
         let reviews = this.getReviews()
-        let reviewIndex = reviews.findIndex(review => review.id = reviewId)
+        let reviewIndex = reviews.findIndex(review => review.id === reviewId)
         reviews.splice(reviewIndex, 1)
         this.saveReviews(reviews)
 

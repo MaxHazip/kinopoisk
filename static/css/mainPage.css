@@ -69,7 +69,8 @@ form {
 }
 
 #filtres_select,
-#sort_select {
+#sort_select,
+#years_select {
     padding: 8px 12px;
     border: 1px solid #cbd8e4;
     border-radius: 6px;

@@ -186,7 +186,7 @@ submitReviewButton.addEventListener('click', () => {
         textReviewInput.value = ""
 
     } else {
-s
+
         errorAlert.textContent = "Зарегестрируйтесь, чтобы оставить отзыв"
 
     }
@@ -199,6 +199,7 @@ const renderReviews = () => {
 
     let reviews = storage.getReviews()
     users = storage.getUsers()
+    let currentUser = storage.getCurrentUser()
 
     for (let i = reviews.length - 1; i >= 0; i--) {
         if (reviews[i].titleId !== currentMovie.id) {
@@ -233,11 +234,22 @@ const renderReviews = () => {
         reviewContainer.appendChild(reviewTitle)
         reviewContainer.appendChild(reviewText)
 
-let deleteButton = document.createElement("button")
-        deleteButton.className = "deleteButton"
-        deleteButton.textContent = "Удалить"
+        if (reviews[i].userId === currentUser.id) {
 
-        reviewContainer.appendChild(deleteButton)
+            let deleteButton = document.createElement("button")
+            deleteButton.className = "deleteButton"
+            deleteButton.textContent = "Удалить"
+
+            deleteButton.addEventListener("click", () => {
+
+                storage.deleteReview(reviews[i].id)
+                renderReviews()
+
+            })
+
+            reviewContainer.appendChild(deleteButton)
+
+        }
 
         reviewsContainer.appendChild(reviewContainer)
     }
