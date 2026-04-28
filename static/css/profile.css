@@ -130,7 +130,7 @@
         gap: 16px;
     }
 
-    /* Переопределение инлайн-грида, создаваемого JS */
+    
     .graidsContainer,
     .friendsContainer {
         display: grid !important;
