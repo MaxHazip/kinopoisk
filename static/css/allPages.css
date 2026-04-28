@@ -222,3 +222,72 @@ footer {
     font-size: 0.75rem;
     color: #7e95ab;
 }
+
+@media (max-width: 1024px) {
+    .container {
+        width: 100%;
+        max-width: 960px;
+        padding: 0 16px;
+    }
+
+    .titles_list {
+        gap: 16px;
+    }
+
+    .title {
+        width: calc(33.333% - 12px);
+    }
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .header-searchbox {
+        width: 100%;
+        order: 3;
+    }
+
+    .header-nav_list {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 8px;
+    }
+
+    .header-nav_list_item {
+        margin-left: 0;
+    }
+
+    .title {
+        width: calc(50% - 12px);
+    }
+
+    .reviewContainer {
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 12px;
+    }
+
+    .title {
+        width: 100%;
+    }
+
+    .titles_list {
+        gap: 20px;
+    }
+
+    .header-nav_list {
+        justify-content: center;
+    }
+
+    .extra_information_list {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+}

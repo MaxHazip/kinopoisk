@@ -62,3 +62,21 @@
 .deletefriend:hover {
     background: #c0392b;
 }
+
+@media (max-width: 768px) {
+    .users {
+        gap: 16px;
+        justify-content: center;
+    }
+
+    .user {
+        width: calc(50% - 16px);
+        min-width: 140px;
+    }
+}
+
+@media (max-width: 480px) {
+    .user {
+        width: 100%;
+    }
+}

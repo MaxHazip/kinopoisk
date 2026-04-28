@@ -86,3 +86,56 @@ form {
     background-position: -20%;
 
 }
+
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .main-sidebar {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .content_nav {
+        display: flex;
+        gap: 12px;
+        white-space: nowrap;
+    }
+
+    .content_nav_item {
+        display: inline-block;
+    }
+
+    form {
+        flex-wrap: wrap;
+    }
+
+    .main_content_searchbox {
+        width: 100%;
+    }
+
+    #filtres_select,
+    #sort_select {
+        flex: 1;
+        min-width: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main_image {
+        height: 200px;
+        background-position: center;
+    }
+
+    form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #filtres_select,
+    #sort_select {
+        width: 100%;
+    }
+}
